@@ -9,12 +9,12 @@ import { User } from '../../models/user';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  user$?: Observable<User | undefined>;
+  user$!: Observable<any>;
 
   constructor(private authService: AuthService) { }
 
-  ngOnInit(): void { //
-    this.user$ = this.authService.user;
+  ngOnInit(): void {
+    this.user$ = this.authService.logged;
   }
 
   logout(){
