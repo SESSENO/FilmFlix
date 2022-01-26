@@ -5,11 +5,19 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home.component';
+import { ResultTileComponent } from './components/result-tile/result-tile.component';
+import { TvDetailComponent } from './tv-detail/tv-detail.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 @NgModule({
   declarations: [
-    ProfileComponent
+    ProfileComponent,
+    HomeComponent,
+    ResultTileComponent,
+    TvDetailComponent,
+    MovieDetailComponent
   ],
   imports: [
     CommonModule,
